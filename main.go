@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/jatin-malik/go-design-patterns/creational"
-)
-
 func sum(a, b int) int {
 	return a + b
 }
@@ -59,11 +53,25 @@ func main() {
 	// car, _ := factory.GetVehicle(abstractfactory.LuxuryC)
 	// fmt.Println(car.(abstractfactory.Car).NumDoors(), " ", car.NumSeats(), " ", car.NumWheels())
 
-	cloner, _ := creational.GetShirtsCloner()
-	proto1, _ := cloner.GetClone(creational.Blue)
-	proto1.SKU = 4
-	proto2, _ := cloner.GetClone(creational.Blue)
-	fmt.Printf("%+v %p\n", proto1, &proto1)
-	fmt.Printf("%+v %p", proto2, &proto2)
+	// cloner, _ := creational.GetShirtsCloner()
+	// proto1, _ := cloner.GetClone(creational.Blue)
+	// proto1.SKU = 4
+	// proto2, _ := cloner.GetClone(creational.Blue)
+	// fmt.Printf("%+v %p\n", proto1, &proto1)
+	// fmt.Printf("%+v %p", proto2, &proto2)
+
+	// son := structural.Son{}
+	// son.P.Age = 32
+	// son.P.Name = "Dave"
+	// son.Nickname = "Charlie"
+
+	// fmt.Println(son)
+
+	// daughter := structural.Daughter{}
+	// daughter.Name = "Dave"
+	// daughter.Age = 32
+	// daughter.Nickname = "Sweety"
+
+	// fmt.Println(daughter)
 
 }
