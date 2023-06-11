@@ -1,5 +1,7 @@
 package main
 
+import "github.com/jatin-malik/go-design-patterns/structural"
+
 func sum(a, b int) int {
 	return a + b
 }
@@ -22,5 +24,7 @@ func main() {
 	// structural.RunCompositeDemo()
 
 	// adapter.RunDemo()
+
+	structural.RunBridgeDemo()
 
 }
