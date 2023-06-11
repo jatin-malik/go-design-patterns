@@ -1,6 +1,9 @@
 package creational
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 // We have a business of a customized T-shirts
 // We have some default tshirts ( prototypes ) which users can customize
@@ -60,4 +63,13 @@ func (s *ShirtsCache) GetClone(m int) (Shirt, error) {
 
 func GetShirtsCloner() (ShirtsCloner, error) {
 	return &ShirtsCache{}, nil
+}
+
+func RunPrototypeDemo() {
+	cloner, _ := GetShirtsCloner()
+	proto1, _ := cloner.GetClone(Blue)
+	proto1.SKU = 4
+	proto2, _ := cloner.GetClone(Blue)
+	fmt.Printf("%+v %p\n", proto1, &proto1)
+	fmt.Printf("%+v %p", proto2, &proto2)
 }

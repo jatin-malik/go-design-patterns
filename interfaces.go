@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Vehicle interface {
 	giveWheels() int
 }
@@ -23,4 +25,15 @@ func (b Bike) giveWheels() int {
 // car checker
 func CheckCar(v Vehicle) bool {
 	return v.giveWheels() == 4
+}
+
+func RunInterfacesDemo() {
+	// car := Car{4}
+	bike := Bike{2}
+
+	if CheckCar(bike) {
+		fmt.Println("Yes!")
+	} else {
+		fmt.Println("No!")
+	}
 }

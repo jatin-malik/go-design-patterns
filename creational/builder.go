@@ -1,5 +1,7 @@
 package creational
 
+import "fmt"
+
 type VehicleProduct struct {
 	Structure string
 	Wheels    int
@@ -72,4 +74,16 @@ func (c *CarBuilder) SetWheels() BuildProcess {
 
 func (c *CarBuilder) GetVehicle() VehicleProduct {
 	return c.v
+}
+
+func RunBuilderDemo() {
+	c := &CarBuilder{}
+	d := ManufacturingDirector{}
+	d.SetBuilder(c)
+	d.Build()
+
+	v := c.GetVehicle()
+	v.Seats = 6
+
+	fmt.Printf("%+v", v)
 }

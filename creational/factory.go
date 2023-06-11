@@ -37,3 +37,11 @@ func GetPaymentMethod(m int) (PaymentMethod, error) {
 		return nil, errors.New("unrecognised payment method")
 	}
 }
+
+func RunFactoryDemo() {
+	pm, e := GetPaymentMethod(2)
+	if e != nil {
+		panic(e)
+	}
+	fmt.Println(pm.Pay(25.12))
+}

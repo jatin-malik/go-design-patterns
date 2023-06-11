@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 )
 
 func jsonify(x any) []byte {
@@ -10,4 +11,9 @@ func jsonify(x any) []byte {
 		panic(err)
 	}
 	return bytes
+}
+
+func RunJsonifyDemo() {
+	str := "what is this?"
+	fmt.Println(string(jsonify(str)))
 }
