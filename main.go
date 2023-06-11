@@ -1,5 +1,7 @@
 package main
 
+import "github.com/jatin-malik/go-design-patterns/structural/adapter"
+
 func sum(a, b int) int {
 	return a + b
 }
@@ -73,5 +75,16 @@ func main() {
 	// daughter.Nickname = "Sweety"
 
 	// fmt.Println(daughter)
+
+	// We have a client who wants to connect his cable to the mac and windows computer
+	client := adapter.Client{Name: "Elliot"}
+	mac := &adapter.Mac{}
+	windows := &adapter.Windows{}
+
+	client.InsertIntoPort(mac)
+	// But the windows computer does not have the same interface , it cannot accept cable connections
+	// So we make a adapter around it , that can take cable connection , convert to serial and then connect to windows.
+	windowsAdapter := &adapter.WindowsAdapter{Windows: windows}
+	client.InsertIntoPort(windowsAdapter)
 
 }
