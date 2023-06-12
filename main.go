@@ -25,6 +25,8 @@ func main() {
 
 	// adapter.RunDemo()
 
-	structural.RunBridgeDemo()
+	// structural.RunBridgeDemo()
+
+	structural.RunDecoratorDemo()
 
 }
