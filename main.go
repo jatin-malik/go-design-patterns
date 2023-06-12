@@ -27,6 +27,8 @@ func main() {
 
 	// structural.RunBridgeDemo()
 
-	structural.RunDecoratorDemo()
+	// structural.RunDecoratorDemo()
+
+	structural.RunFacadeDemo()
 
 }
