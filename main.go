@@ -1,6 +1,6 @@
 package main
 
-import "github.com/jatin-malik/go-design-patterns/structural"
+import "github.com/jatin-malik/go-design-patterns/behavioral"
 
 func sum(a, b int) int {
 	return a + b
@@ -33,5 +33,8 @@ func main() {
 
 	// structural.RunProxyDemo()
 
-	structural.RunFlyweightDemo()
+	// structural.RunFlyweightDemo()
+
+	behavioral.RunCORDemo()
+
 }
