@@ -39,6 +39,8 @@ func main() {
 
 	// behavioral.RunCommandDemo()
 
-	behavioral.RunIteratorDemo()
+	// behavioral.RunIteratorDemo()
+
+	behavioral.RunMediatorDemo()
 
 }
