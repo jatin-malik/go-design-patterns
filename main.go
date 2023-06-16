@@ -5,6 +5,7 @@ func sum(a, b int) int {
 }
 
 func main() {
+
 	// RunClosuresDemo()
 
 	// RunInterfacesDemo()
@@ -42,5 +43,7 @@ func main() {
 	// behavioral.RunMediatorDemo()
 
 	// memento.RunDemo()
+
+	// observer.RunDemo()
 
 }
