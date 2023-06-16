@@ -41,6 +41,8 @@ func main() {
 
 	// behavioral.RunIteratorDemo()
 
-	behavioral.RunMediatorDemo()
+	// behavioral.RunMediatorDemo()
+
+	behavioral.RunMementoDemo()
 
 }
