@@ -28,7 +28,7 @@ func (t *TV) off() {
 
 // Two ways of interacting with TV, TV buttons or remote buttons.
 
-// Each button ( any button ) when pressed , executes a command. So lets embed a command in each button.
+// Each button( any button ) when pressed, executes a command. So lets embed a command in each button.
 
 type Command interface {
 	execute()
