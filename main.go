@@ -1,7 +1,5 @@
 package main
 
-import "github.com/jatin-malik/go-design-patterns/behavioral"
-
 func sum(a, b int) int {
 	return a + b
 }
@@ -35,7 +33,7 @@ func main() {
 
 	// structural.RunFlyweightDemo()
 
-	// behavioral.RunCORDemo()
+	// cor.RunDemo()
 
 	// behavioral.RunCommandDemo()
 
@@ -43,6 +41,6 @@ func main() {
 
 	// behavioral.RunMediatorDemo()
 
-	behavioral.RunMementoDemo()
+	// memento.RunDemo()
 
 }
