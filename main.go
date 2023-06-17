@@ -1,6 +1,6 @@
 package main
 
-import "github.com/jatin-malik/go-design-patterns/behavioral/visitor"
+import "github.com/jatin-malik/go-design-patterns/behavioral/template"
 
 func sum(a, b int) int {
 	return a + b
@@ -52,6 +52,8 @@ func main() {
 
 	// strategy.RunDemo()
 
-	visitor.RunDemo()
+	// visitor.RunDemo()
+
+	template.RunDemo()
 
 }
