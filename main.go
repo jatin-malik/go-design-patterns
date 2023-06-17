@@ -1,5 +1,9 @@
 package main
 
+import (
+	"github.com/jatin-malik/go-design-patterns/behavioral/state"
+)
+
 func sum(a, b int) int {
 	return a + b
 }
@@ -45,5 +49,7 @@ func main() {
 	// memento.RunDemo()
 
 	// observer.RunDemo()
+
+	state.RunDemo()
 
 }
