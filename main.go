@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/jatin-malik/go-design-patterns/behavioral/strategy"
-)
+import "github.com/jatin-malik/go-design-patterns/behavioral/visitor"
 
 func sum(a, b int) int {
 	return a + b
@@ -52,6 +50,8 @@ func main() {
 
 	// state.RunDemo()
 
-	strategy.RunDemo()
+	// strategy.RunDemo()
+
+	visitor.RunDemo()
 
 }
