@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/jatin-malik/go-design-patterns/behavioral/state"
+	"github.com/jatin-malik/go-design-patterns/behavioral/strategy"
 )
 
 func sum(a, b int) int {
@@ -50,6 +50,8 @@ func main() {
 
 	// observer.RunDemo()
 
-	state.RunDemo()
+	// state.RunDemo()
+
+	strategy.RunDemo()
 
 }
